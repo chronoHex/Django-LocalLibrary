@@ -19,7 +19,7 @@ from django.urls import reverse_lazy
 alpha_query = dict(zip(range(1,27), string.ascii_lowercase))
 def index(request):
     """View function for the home page of site."""
-    q = random.randint(1, 27)
+    q = random.randint(0, 26)
     # Generate counts of some of the main objects
     num_books = Book.objects.all().count()
     num_instances = BookInstance.objects.all().count()
