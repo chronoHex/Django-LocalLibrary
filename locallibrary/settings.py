@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '&@n3p9m2i8i057(xc01#mv3g2hhua(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['peaceful-virgin-islands-49252.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -42,7 +42,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
