@@ -1,2 +1,2 @@
 # django_lo_lib
-A local library website written in django
+The Django tutorial website, followed and built by me.
